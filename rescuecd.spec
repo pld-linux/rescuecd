@@ -9,9 +9,9 @@ License:	GPL v2
 Group:		Applications/System
 %ifarch %{ix86}
 Source0:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/RCDx86_%(echo %{version} | tr -d .).iso
-# Source0-md5:	e05fbd740be1f34c434d42da7e04bdce
+# Source0-md5:	9769e7a2da7c00dab94bf03762631b79
 Source1:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/rcdmod
-# Source1-md5:	7c59799486d3cdf009acc0f5c75fefe4
+# Source1-md5:	2d45f88eacb958caaf69300e21e0c9d1
 %endif
 %ifarch %{x8664}
 Source2:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/RCDx64_%(echo %{version} | tr -d .).iso
@@ -32,7 +32,7 @@ PLD RescueCD
 Summary:	rescuecd image for rc-boot
 Summary(pl.UTF-8):	Obraz rescuecd dla rc-boot
 Group:		Base
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = {version}-%{release}
 Requires:	rc-boot
 
 %description -n rc-boot-image-rescuecd
