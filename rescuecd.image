@@ -1,0 +1,4 @@
+TYPE=Linux
+ROOT=/dev/ram0
+KERNEL=/boot/rescuecd.vmlinuz
+INITRD=/boot/rescuecd.initrd
