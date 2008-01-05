@@ -32,7 +32,7 @@ PLD RescueCD
 Summary:	rescuecd image for rc-boot
 Summary(pl.UTF-8):	Obraz rescuecd dla rc-boot
 Group:		Base
-Requires:	%{name} = {version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 Requires:	rc-boot
 
 %description -n rc-boot-image-rescuecd
