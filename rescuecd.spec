@@ -3,21 +3,21 @@
 # - pl descryption and summary
 Summary:	PLD RescueCD
 Name:		rescuecd
-Version:	2.90
+Version:	2.94
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 %ifarch %{ix86}
 Source0:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/RCDx86_%(echo %{version} | tr -d .).iso
-# Source0-md5:	9769e7a2da7c00dab94bf03762631b79
+# Source0-md5:	9bc3cc141c373c41699a162309a07563
 Source1:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/rcdmod
-# Source1-md5:	2d45f88eacb958caaf69300e21e0c9d1
+# Source1-md5:	6bf65a0d963309adf44ee01e201cbe1e
 %endif
 %ifarch %{x8664}
 Source2:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/RCDx64_%(echo %{version} | tr -d .).iso
-# Source2-md5:	e05fbd740be1f34c434d42da7e04bdce
+# Source2-md5:	c645c863e806037e1f1f4469dbad181d
 Source3:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/rcdmod
-# Source3-md5:	7c59799486d3cdf009acc0f5c75fefe4
+# Source3-md5:	a9a8924aeab27240767d60474ffd0cff
 %endif
 Source4:	%{name}.image
 URL:		http://rescuecd.pld-linux.org/
