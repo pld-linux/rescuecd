@@ -11,7 +11,7 @@ Group:		Applications/System
 Source0:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/RCDx86_%(echo %{version} | tr -d .).iso
 # Source0-md5:	9bc3cc141c373c41699a162309a07563
 Source1:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/rcdmod
-# Source1-md5:	6bf65a0d963309adf44ee01e201cbe1e
+# Source1-md5:	eede0956dcf5b04e104b6a7b2c6fa863
 %endif
 %ifarch %{x8664}
 Source2:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/RCDx64_%(echo %{version} | tr -d .).iso
