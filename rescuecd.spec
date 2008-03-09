@@ -7,18 +7,14 @@ Version:	2.94
 Release:	1
 License:	GPL v2
 Group:		Applications/System
-%ifarch %{ix86}
 Source0:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/RCDx86_%(echo %{version} | tr -d .).iso
 # Source0-md5:	9bc3cc141c373c41699a162309a07563
-Source1:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/rcdmod
+Source1:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/rcdmod?x86
 # Source1-md5:	eede0956dcf5b04e104b6a7b2c6fa863
-%endif
-%ifarch %{x8664}
 Source2:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/RCDx64_%(echo %{version} | tr -d .).iso
 # Source2-md5:	c645c863e806037e1f1f4469dbad181d
-Source3:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/rcdmod
+Source3:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/rcdmod?x86_64
 # Source3-md5:	a9a8924aeab27240767d60474ffd0cff
-%endif
 Source4:	%{name}.image
 URL:		http://rescuecd.pld-linux.org/
 BuildRequires:	/usr/bin/isoinfo
@@ -61,10 +57,10 @@ isoinfo -R -i %{SOURCE2} -x /boot/isolinux/vmlinuz > $RPM_BUILD_ROOT/boot/%{name
 
 install -d $RPM_BUILD_ROOT%{_bindir}
 %ifarch %{ix86}
-install %{SOURCE1} $RPM_BUILD_ROOT/%{_bindir}
+install %{SOURCE1} $RPM_BUILD_ROOT/%{_bindir}/rcdmod
 %endif
 %ifarch %{x8664}
-install %{SOURCE3} $RPM_BUILD_ROOT/%{_bindir}
+install %{SOURCE3} $RPM_BUILD_ROOT/%{_bindir}/rcdmod
 %endif
 
 %clean
