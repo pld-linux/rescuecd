@@ -51,8 +51,8 @@ isoinfo -R -i %{SOURCE0} -x /rescue.cpi > $RPM_BUILD_ROOT/boot/%{name}.initrd
 isoinfo -R -i %{SOURCE0} -x /boot/isolinux/vmlinuz > $RPM_BUILD_ROOT/boot/%{name}.vmlinuz
 %endif
 %ifarch %{x8664}
-isoinfo -R -i %{SOURCE2} -x /rescue.cpi > $RPM_BUILD_ROOT/boot/%{name}.initrd
-isoinfo -R -i %{SOURCE2} -x /boot/isolinux/vmlinuz > $RPM_BUILD_ROOT/boot/%{name}.vmlinuz
+isoinfo -R -i %{SOURCE2} -x /rescue6.cpi > $RPM_BUILD_ROOT/boot/%{name}.initrd
+isoinfo -R -i %{SOURCE2} -x /boot/isolinux/vmlinuz6 > $RPM_BUILD_ROOT/boot/%{name}.vmlinuz
 %endif
 
 install -d $RPM_BUILD_ROOT%{_bindir}
