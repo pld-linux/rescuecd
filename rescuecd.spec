@@ -9,11 +9,11 @@ License:	GPL v2
 Group:		Applications/System
 Source0:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/RCDx86_%(echo %{version} | tr -d .).iso
 # Source0-md5:	84b9a3917a16c5148f881b33f92ca446
-Source1:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/rcdmod?x86
+Source1:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/rcdmod.x86
 # Source1-md5:	d712792e3216e49aec85bf5046d1e212
 Source2:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/RCDx64_%(echo %{version} | tr -d .).iso
 # Source2-md5:	91567cb34cbe73130df7a41dd7987ca3
-Source3:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/rcdmod?x86_64
+Source3:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/rcdmod.x64
 # Source3-md5:	5d89cd4d8b6ff135da5d9ae9a2c0e5b8
 Source4:	%{name}.image
 URL:		http://rescuecd.pld-linux.org/
