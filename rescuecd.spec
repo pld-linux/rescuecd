@@ -1,7 +1,7 @@
 # TODO:
 # - more verbose description
-# - pl description and summary
-Summary:	PLD RescueCD
+Summary:	PLD RescueCD bootable from hard disk
+Summary(pl.UTF-8):	PLD RescueCD w postaci uruchamialnej z dysku
 Name:		rescuecd
 Version:	2.95
 Release:	1
@@ -22,11 +22,15 @@ ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-PLD RescueCD
+PLD RescueCD as files runable from bootloader.
+
+%description -l pl.UTF-8
+PLD RescueCD w postaci plików zdatnych do uruchomienia z poziomu
+bootloadera.
 
 %package -n rc-boot-image-rescuecd
 Summary:	rescuecd image for rc-boot
-Summary(pl.UTF-8):	Obraz rescuecd dla rc-boot
+Summary(pl.UTF-8):	Obraz rescuecd dla rc-boota
 Group:		Base
 Requires:	%{name} = %{version}-%{release}
 Requires:	rc-boot
@@ -35,7 +39,7 @@ Requires:	rc-boot
 rescuecd image for rc-boot.
 
 %description -n rc-boot-image-rescuecd -l pl.UTF-8
-Obraz rescuecd dla rc-boot.
+Obraz rescuecd dla rc-boota.
 
 %prep
 
