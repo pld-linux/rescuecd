@@ -3,18 +3,18 @@
 Summary:	PLD RescueCD bootable from hard disk
 Summary(pl.UTF-8):	PLD RescueCD w postaci uruchamialnej z dysku
 Name:		rescuecd
-Version:	2.96
+Version:	2.97
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/RCDx86_%(echo %{version} | tr -d .).iso
-# Source0-md5:	5f3dd68f5875bcaf675966f8a7d6f1ab
+# Source0-md5:	0f1a63f4bea8499d162c49e4488250aa
 Source1:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/rcdmod.x86
-# Source1-md5:	bc20e2f88972033e0248aa79760e0bda
+# Source1-md5:	580d9ddea4b3967b75a3ec29084807d6
 Source2:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/RCDx64_%(echo %{version} | tr -d .).iso
-# Source2-md5:	4bc9f99908162d24a0b305b611f7af86
+# Source2-md5:	3b6413e316d875881838d3e0cd1a3569
 Source3:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86_64/rcdmod.x64
-# Source3-md5:	fa1efcc3702a0c6fe1dbe7b76a3a06b6
+# Source3-md5:	862c1d1921d1d53c6af0cae321416d1b
 Source4:	%{name}.image
 URL:		http://rescuecd.pld-linux.org/
 BuildRequires:	/usr/bin/isoinfo
