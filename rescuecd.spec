@@ -4,7 +4,7 @@ Summary:	PLD RescueCD bootable from hard disk
 Summary(pl.UTF-8):	PLD RescueCD w postaci uruchamialnej z dysku
 Name:		rescuecd
 Version:	11.02
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://rescuecd.pld-linux.org/download/PLDRescueCD-%{version}/x86/RCDx86_%(echo %{version} | tr . _).iso
